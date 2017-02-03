@@ -9,23 +9,55 @@
 /* Begin PBXBuildFile section */
 		8302D6791E37E36900063298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6781E37E36900063298 /* main.m */; };
 		8302D67C1E37E36900063298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D67B1E37E36900063298 /* AppDelegate.m */; };
-		8302D67F1E37E36900063298 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D67E1E37E36900063298 /* ViewController.m */; };
 		8302D6821E37E36900063298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302D6801E37E36900063298 /* Main.storyboard */; };
 		8302D6841E37E36900063298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8302D6831E37E36900063298 /* Assets.xcassets */; };
 		8302D6871E37E36900063298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302D6851E37E36900063298 /* LaunchScreen.storyboard */; };
+		8302D6941E37E62200063298 /* TBWMountainListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6931E37E62200063298 /* TBWMountainListVC.m */; };
+		8302D6971E37E63200063298 /* TBWMountainDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6961E37E63200063298 /* TBWMountainDetailsVC.m */; };
+		8302D69C1E37E67B00063298 /* TBWMountainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D69B1E37E67B00063298 /* TBWMountainManager.m */; };
+		8302D69F1E37E69000063298 /* TBWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D69E1E37E69000063298 /* TBWNetworkManager.m */; };
+		8302D6A31E37E6AD00063298 /* TBWMountainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6A21E37E6AD00063298 /* TBWMountainDataModel.m */; };
+		8302D6A81E37E72500063298 /* TBWUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6A71E37E72500063298 /* TBWUrlManager.m */; };
+		8302D6AB1E37E73C00063298 /* TBWAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6AA1E37E73C00063298 /* TBWAppManager.m */; };
+		8302D6AE1E37E75100063298 /* TBWGenericFunctionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6AD1E37E75100063298 /* TBWGenericFunctionManager.m */; };
+		8302D6B11E37E75E00063298 /* TBWErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302D6B01E37E75E00063298 /* TBWErrorManager.m */; };
+		8374ED211E439946002357EC /* TBWUtilsImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8374ED201E439946002357EC /* TBWUtilsImage.m */; };
+		E98DB9ACD5F451F1ABDD0D30 /* libPods-AFNetworkingTutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5FF177652CB4B8754467F /* libPods-AFNetworkingTutorial.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BD5FF177652CB4B8754467F /* libPods-AFNetworkingTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworkingTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302D6741E37E36900063298 /* AFNetworkingTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNetworkingTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302D6781E37E36900063298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8302D67A1E37E36900063298 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8302D67B1E37E36900063298 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8302D67D1E37E36900063298 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8302D67E1E37E36900063298 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8302D6811E37E36900063298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8302D6831E37E36900063298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8302D6861E37E36900063298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8302D6881E37E36900063298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8302D6921E37E62200063298 /* TBWMountainListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWMountainListVC.h; path = Controller/TBWMountainListVC.h; sourceTree = "<group>"; };
+		8302D6931E37E62200063298 /* TBWMountainListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWMountainListVC.m; path = Controller/TBWMountainListVC.m; sourceTree = "<group>"; };
+		8302D6951E37E63200063298 /* TBWMountainDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWMountainDetailsVC.h; path = Controller/TBWMountainDetailsVC.h; sourceTree = "<group>"; };
+		8302D6961E37E63200063298 /* TBWMountainDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWMountainDetailsVC.m; path = Controller/TBWMountainDetailsVC.m; sourceTree = "<group>"; };
+		8302D69A1E37E67B00063298 /* TBWMountainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWMountainManager.h; path = Model/Entity/TBWMountainManager.h; sourceTree = "<group>"; };
+		8302D69B1E37E67B00063298 /* TBWMountainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWMountainManager.m; path = Model/Entity/TBWMountainManager.m; sourceTree = "<group>"; };
+		8302D69D1E37E69000063298 /* TBWNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWNetworkManager.h; path = Model/CommunicationLayer/TBWNetworkManager.h; sourceTree = "<group>"; };
+		8302D69E1E37E69000063298 /* TBWNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWNetworkManager.m; path = Model/CommunicationLayer/TBWNetworkManager.m; sourceTree = "<group>"; };
+		8302D6A11E37E6AD00063298 /* TBWMountainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWMountainDataModel.h; path = Model/Entity/DataModel/TBWMountainDataModel.h; sourceTree = "<group>"; };
+		8302D6A21E37E6AD00063298 /* TBWMountainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWMountainDataModel.m; path = Model/Entity/DataModel/TBWMountainDataModel.m; sourceTree = "<group>"; };
+		8302D6A51E37E6F300063298 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Global.h; path = Model/Utils/Global.h; sourceTree = "<group>"; };
+		8302D6A61E37E72500063298 /* TBWUrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWUrlManager.h; path = Model/CommunicationLayer/TBWUrlManager.h; sourceTree = "<group>"; };
+		8302D6A71E37E72500063298 /* TBWUrlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWUrlManager.m; path = Model/CommunicationLayer/TBWUrlManager.m; sourceTree = "<group>"; };
+		8302D6A91E37E73C00063298 /* TBWAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWAppManager.h; path = Model/Utils/TBWAppManager.h; sourceTree = "<group>"; };
+		8302D6AA1E37E73C00063298 /* TBWAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWAppManager.m; path = Model/Utils/TBWAppManager.m; sourceTree = "<group>"; };
+		8302D6AC1E37E75100063298 /* TBWGenericFunctionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWGenericFunctionManager.h; path = Model/Utils/TBWGenericFunctionManager.h; sourceTree = "<group>"; };
+		8302D6AD1E37E75100063298 /* TBWGenericFunctionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWGenericFunctionManager.m; path = Model/Utils/TBWGenericFunctionManager.m; sourceTree = "<group>"; };
+		8302D6AF1E37E75E00063298 /* TBWErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWErrorManager.h; path = Model/Utils/TBWErrorManager.h; sourceTree = "<group>"; };
+		8302D6B01E37E75E00063298 /* TBWErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWErrorManager.m; path = Model/Utils/TBWErrorManager.m; sourceTree = "<group>"; };
+		8374ED1F1E439946002357EC /* TBWUtilsImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWUtilsImage.h; path = Model/Utils/TBWUtilsImage.h; sourceTree = "<group>"; };
+		8374ED201E439946002357EC /* TBWUtilsImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWUtilsImage.m; path = Model/Utils/TBWUtilsImage.m; sourceTree = "<group>"; };
+		D5B9324D2FE10A620FEDE826 /* Pods-AFNetworkingTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworkingTutorial/Pods-AFNetworkingTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		DC51404E5992E022B871CE01 /* Pods-AFNetworkingTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworkingTutorial/Pods-AFNetworkingTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98DB9ACD5F451F1ABDD0D30 /* libPods-AFNetworkingTutorial.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ED49F09100267A23A4E93C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B9324D2FE10A620FEDE826 /* Pods-AFNetworkingTutorial.debug.xcconfig */,
+				DC51404E5992E022B871CE01 /* Pods-AFNetworkingTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C75DAB7FB1A577EA8F6B74D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BD5FF177652CB4B8754467F /* libPods-AFNetworkingTutorial.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8302D66B1E37E36800063298 = {
 			isa = PBXGroup;
 			children = (
 				8302D6761E37E36900063298 /* AFNetworkingTutorial */,
 				8302D6751E37E36900063298 /* Products */,
+				3ED49F09100267A23A4E93C6 /* Pods */,
+				7C75DAB7FB1A577EA8F6B74D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +110,10 @@
 		8302D6761E37E36900063298 /* AFNetworkingTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				8302D67A1E37E36900063298 /* AppDelegate.h */,
-				8302D67B1E37E36900063298 /* AppDelegate.m */,
-				8302D67D1E37E36900063298 /* ViewController.h */,
-				8302D67E1E37E36900063298 /* ViewController.m */,
-				8302D6801E37E36900063298 /* Main.storyboard */,
-				8302D6831E37E36900063298 /* Assets.xcassets */,
-				8302D6851E37E36900063298 /* LaunchScreen.storyboard */,
+				8302D68E1E37E5B900063298 /* AppDelegate */,
+				8302D6901E37E5C600063298 /* Model */,
+				8302D6911E37E5CA00063298 /* Controller */,
+				8302D68F1E37E5C100063298 /* View */,
 				8302D6881E37E36900063298 /* Info.plist */,
 				8302D6771E37E36900063298 /* Supporting Files */,
 			);
@@ -79,6 +128,92 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8302D68E1E37E5B900063298 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8302D67A1E37E36900063298 /* AppDelegate.h */,
+				8302D67B1E37E36900063298 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8302D68F1E37E5C100063298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8302D6801E37E36900063298 /* Main.storyboard */,
+				8302D6831E37E36900063298 /* Assets.xcassets */,
+				8302D6851E37E36900063298 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8302D6901E37E5C600063298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8302D6991E37E64900063298 /* Entity */,
+				8302D6981E37E63500063298 /* Communication Layer */,
+				8302D6A41E37E6DF00063298 /* Utils */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8302D6911E37E5CA00063298 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8302D6921E37E62200063298 /* TBWMountainListVC.h */,
+				8302D6931E37E62200063298 /* TBWMountainListVC.m */,
+				8302D6951E37E63200063298 /* TBWMountainDetailsVC.h */,
+				8302D6961E37E63200063298 /* TBWMountainDetailsVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8302D6981E37E63500063298 /* Communication Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8302D69D1E37E69000063298 /* TBWNetworkManager.h */,
+				8302D69E1E37E69000063298 /* TBWNetworkManager.m */,
+				8302D6A61E37E72500063298 /* TBWUrlManager.h */,
+				8302D6A71E37E72500063298 /* TBWUrlManager.m */,
+			);
+			name = "Communication Layer";
+			sourceTree = "<group>";
+		};
+		8302D6991E37E64900063298 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8302D6A01E37E69400063298 /* Data Model */,
+				8302D69A1E37E67B00063298 /* TBWMountainManager.h */,
+				8302D69B1E37E67B00063298 /* TBWMountainManager.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		8302D6A01E37E69400063298 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				8302D6A11E37E6AD00063298 /* TBWMountainDataModel.h */,
+				8302D6A21E37E6AD00063298 /* TBWMountainDataModel.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		8302D6A41E37E6DF00063298 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8302D6A51E37E6F300063298 /* Global.h */,
+				8302D6A91E37E73C00063298 /* TBWAppManager.h */,
+				8302D6AA1E37E73C00063298 /* TBWAppManager.m */,
+				8302D6AC1E37E75100063298 /* TBWGenericFunctionManager.h */,
+				8302D6AD1E37E75100063298 /* TBWGenericFunctionManager.m */,
+				8302D6AF1E37E75E00063298 /* TBWErrorManager.h */,
+				8302D6B01E37E75E00063298 /* TBWErrorManager.m */,
+				8374ED1F1E439946002357EC /* TBWUtilsImage.h */,
+				8374ED201E439946002357EC /* TBWUtilsImage.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8302D68B1E37E36900063298 /* Build configuration list for PBXNativeTarget "AFNetworkingTutorial" */;
 			buildPhases = (
+				15DC07580BC04A993B66D702 /* [CP] Check Pods Manifest.lock */,
 				8302D6701E37E36900063298 /* Sources */,
 				8302D6711E37E36900063298 /* Frameworks */,
 				8302D6721E37E36900063298 /* Resources */,
+				BD3BCD936F1C82117D145BBA /* [CP] Embed Pods Frameworks */,
+				4D608BCA45FF67064F2327ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +243,7 @@
 		8302D66C1E37E36800063298 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TBW;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Blog;
 				TargetAttributes = {
@@ -145,14 +284,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15DC07580BC04A993B66D702 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D608BCA45FF67064F2327ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFNetworkingTutorial/Pods-AFNetworkingTutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3BCD936F1C82117D145BBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFNetworkingTutorial/Pods-AFNetworkingTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8302D6701E37E36900063298 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8302D67F1E37E36900063298 /* ViewController.m in Sources */,
+				8302D6A31E37E6AD00063298 /* TBWMountainDataModel.m in Sources */,
+				8302D6B11E37E75E00063298 /* TBWErrorManager.m in Sources */,
+				8302D6971E37E63200063298 /* TBWMountainDetailsVC.m in Sources */,
+				8374ED211E439946002357EC /* TBWUtilsImage.m in Sources */,
 				8302D67C1E37E36900063298 /* AppDelegate.m in Sources */,
+				8302D6AB1E37E73C00063298 /* TBWAppManager.m in Sources */,
 				8302D6791E37E36900063298 /* main.m in Sources */,
+				8302D69C1E37E67B00063298 /* TBWMountainManager.m in Sources */,
+				8302D6A81E37E72500063298 /* TBWUrlManager.m in Sources */,
+				8302D69F1E37E69000063298 /* TBWNetworkManager.m in Sources */,
+				8302D6941E37E62200063298 /* TBWMountainListVC.m in Sources */,
+				8302D6AE1E37E75100063298 /* TBWGenericFunctionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +464,7 @@
 		};
 		8302D68C1E37E36900063298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B9324D2FE10A620FEDE826 /* Pods-AFNetworkingTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AFNetworkingTutorial/Info.plist;
@@ -279,6 +476,7 @@
 		};
 		8302D68D1E37E36900063298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC51404E5992E022B871CE01 /* Pods-AFNetworkingTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AFNetworkingTutorial/Info.plist;
@@ -307,6 +505,7 @@
 				8302D68D1E37E36900063298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

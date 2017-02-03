@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  AFNetworkingTutorial
 //
-//  Created by Chris Lin on 1/25/17.
+//  Created by Wuqian on 1/25/17.
 //  Copyright © 2017 Blog. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "TBWAppManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[TBWAppManager sharedInstance] initializeManagersAfterLaunch];
     return YES;
 }
 

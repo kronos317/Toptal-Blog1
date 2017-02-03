@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NDI-gP-BWj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Details-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="STORYBOARD_DETAILSVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TBWMountainDetailsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,113 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Jzy-eC-fj2" userLabel="Image - Photo">
+                                <rect key="frame" x="26" y="94" width="323" height="215.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jzy-eC-fj2" secondAttribute="height" multiplier="3:2" id="lHe-Wo-Vmb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKC-da-LFk" userLabel="Label - Details">
+                                <rect key="frame" x="26" y="329.5" width="323" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sKC-da-LFk" firstAttribute="width" secondItem="Jzy-eC-fj2" secondAttribute="width" id="QKR-rJ-Mx8"/>
+                            <constraint firstItem="Jzy-eC-fj2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Roa-pK-uaV"/>
+                            <constraint firstItem="sKC-da-LFk" firstAttribute="top" secondItem="Jzy-eC-fj2" secondAttribute="bottom" constant="20" id="W6M-nl-rwA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jzy-eC-fj2" secondAttribute="trailing" constant="10" id="aeZ-2d-S2V"/>
+                            <constraint firstItem="Jzy-eC-fj2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="gO6-cG-41w"/>
+                            <constraint firstItem="sKC-da-LFk" firstAttribute="centerX" secondItem="Jzy-eC-fj2" secondAttribute="centerX" id="vax-Da-IaI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Details" id="EaP-kr-TvL"/>
+                    <connections>
+                        <outlet property="imagePhoto" destination="Jzy-eC-fj2" id="4LY-6a-GfK"/>
+                        <outlet property="labelDetails" destination="sKC-da-LFk" id="an7-SP-Wfw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1386" y="170"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Ei-wg-cDP">
+            <objects>
+                <navigationController id="NDI-gP-BWj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xD-58-YwB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DcF-OV-7vR" kind="relationship" relationship="rootViewController" id="4Mh-pG-gH8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XX-wZ-ewQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="170"/>
+        </scene>
+        <!--Famous Mountains-->
+        <scene sceneID="BVU-yr-hbA">
+            <objects>
+                <viewController storyboardIdentifier="STORYBOARD_LISTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DcF-OV-7vR" customClass="TBWMountainListVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qxa-sJ-OKK"/>
+                        <viewControllerLayoutGuide type="bottom" id="7NP-cu-GvG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GO2-sw-cxF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="szU-1Q-gCS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVC_MOUNTAIN_ITEM" id="ztV-mT-Qn5">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ztV-mT-Qn5" id="JUQ-32-DUc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DcF-OV-7vR" id="XTg-Ai-gKm"/>
+                                    <outlet property="delegate" destination="DcF-OV-7vR" id="UNY-zB-TsM"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="70J-G5-mIU">
+                                <rect key="frame" x="177" y="94" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="70J-G5-mIU" firstAttribute="centerX" secondItem="GO2-sw-cxF" secondAttribute="centerX" id="Fzy-hY-cKl"/>
+                            <constraint firstAttribute="trailing" secondItem="szU-1Q-gCS" secondAttribute="trailing" id="GWP-3k-sZN"/>
+                            <constraint firstItem="szU-1Q-gCS" firstAttribute="leading" secondItem="GO2-sw-cxF" secondAttribute="leading" id="cXw-jc-2BV"/>
+                            <constraint firstItem="70J-G5-mIU" firstAttribute="top" secondItem="Qxa-sJ-OKK" secondAttribute="bottom" constant="30" id="gcM-pI-bGQ"/>
+                            <constraint firstItem="7NP-cu-GvG" firstAttribute="top" secondItem="szU-1Q-gCS" secondAttribute="bottom" id="kgA-Q3-VqU"/>
+                            <constraint firstItem="szU-1Q-gCS" firstAttribute="top" secondItem="Qxa-sJ-OKK" secondAttribute="bottom" id="t0E-ne-4QC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Famous Mountains" id="5qh-Wk-eDo"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="70J-G5-mIU" id="DeX-kw-f3r"/>
+                        <outlet property="tableview" destination="szU-1Q-gCS" id="fah-YX-G55"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SEGUE_FROM_LIST_TO_DETAILS" id="8Xa-kj-AaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnr-nG-rk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="170"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mountain-placeholder" width="354" height="142"/>
+    </resources>
 </document>
